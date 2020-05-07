@@ -28,16 +28,13 @@ def huluobo_diaoluo(r_settings,screen,huluobos):
     new_huluobo=Huluobo(r_settings,screen)
     huluobos.add(new_huluobo)
 
-def update_huluobos(r_settings,screen,huluobos):
-    huluobo_diaoluo(r_settings,screen,huluobos)
+def update_huluobos(r_settings,screen,huluobos,man):
+    if len(huluobos) <= 2:
+       huluobo_diaoluo(r_settings,screen,huluobos)
     huluobos.update()
     for huluobo in huluobos.copy():
-        if huluobo.rect.y > 800:
+        if huluobo.rect.y > 800 or pygame.sprite.spritecollideany(man,huluobos):
             huluobos.remove(huluobo)
-
-
-
-
 
 
 def update_screen(r_settings,screen,man,huluobos):

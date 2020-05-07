@@ -8,6 +8,7 @@ class Settings():
 
         # 小人的设置
         self.man_speed_factor=1.5
-        self.huluobo_speed_factor=1.5
+        self.huluobo_speed_factor=0.1
+
 
 

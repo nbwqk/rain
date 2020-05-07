@@ -18,7 +18,7 @@ def run_game():
     while True:
         gf.check_event(man)
         man.update()
-        gf.update_huluobos(r_settings,screen,huluobos)
+        gf.update_huluobos(r_settings,screen,huluobos,man)
         gf.update_screen(r_settings,screen,man,huluobos)
 
 run_game()
