@@ -8,7 +8,21 @@ class Settings():
 
         # 小人的设置
         self.man_speed_factor=1.5
-        self.huluobo_speed_factor=0.1
+        self.huluobo_speed_factor=0.2
+
+        # 水果蔬菜设置
+        self.HULUOBO='images/huluobo.bmp'
+        self.DABAICAI='images/dabaicai.bmp'
+        self.TUDOU='images/tudou.bmp'
+        self.XIHONGSHI='images/xihongshi.bmp'
+        self.LAJIAO='images/lajiao.bmp'
+        self.NANGUA='images/nangua.bmp'
+        self.XIANGJIAO='images/xiangjiao.bmp'
+        self.PINGGUO='images/pingguo.bmp'
+        self.ZHUANSHI='images/zhuanshi.bmp'
+        self.XIGUA='images/xigua.bmp'
+        self.WUPING=[self.HULUOBO,self.DABAICAI,self.TUDOU,self.XIHONGSHI,self.LAJIAO,
+                     self.NANGUA,self.XIANGJIAO,self.PINGGUO,self.ZHUANSHI,self.XIGUA]
 
 
 

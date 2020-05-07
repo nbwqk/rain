@@ -29,7 +29,7 @@ def huluobo_diaoluo(r_settings,screen,huluobos):
     huluobos.add(new_huluobo)
 
 def update_huluobos(r_settings,screen,huluobos,man):
-    if len(huluobos) <= 2:
+    if len(huluobos) <= 3:
        huluobo_diaoluo(r_settings,screen,huluobos)
     huluobos.update()
     for huluobo in huluobos.copy():
